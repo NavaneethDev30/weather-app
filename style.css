@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    background-color: #1D1616;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Section */
+.bg {
+    position: relative;
+    width: 100%;
+    height: 800px; /* Adjust height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Background Image */
+.bg img {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Input and Button Container */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    margin-bottom:70px; /* Pushes it above the text */
+}
+
+
+.gb img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top:242px;
+    right: -550px;
+    z-index: 11111111;
+}
+/* Input Field */
+.hs {
+    margin-top: -260px;
+    width: 250px;
+    padding: 10px;
+    height: 30px;
+    padding-left: 80px;
+    border-radius: 24px;
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Button */
+button {
+    margin-top: -260px;
+    padding: 10px 15px;
+    background: #d2530f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 120px;
+    white-space: nowrap;
+    height: 45px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+    background: #ff7b00;
+}
+
+/* Weather App Title */
+.ws {
+    color: white;
+    font-size: 100px;
+    font-family: "Lexend Exa", sans-serif;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Weather Information Section */
+#weatherSection {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#weatherResult {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 60%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#weatherResult h3 {
+    font-size: 30px;
+}
+
+#weatherResult p {
+    font-size: 18px;
+}
+
+#weatherResult img {
+    width: 100px;
+    height: 100px;
+}
